@@ -1,202 +1,202 @@
 [
-    {
-      "place": "European_Union",
-      "value": 4.808,
-      "date": 2020
-    },
-    {
-      "place": "Belgium",
-      "value": 5.899,
-      "date": 2020
-    },
-    {
-      "place": "Bulgaria",
-      "value": 16.785,
-      "date": 2020
-    },
-    {
-      "place": "Czechia",
-      "value": 3.598,
-      "date": 2020
-    },
-    {
-      "place": "Denmark",
-      "value": 3.453,
-      "date": 2020
-    },
-    {
-      "place": "Germany",
-      "value": 4.824,
-      "date": 2020
-    },
-    {
-      "place": "Estonia",
-      "value": 12.171,
-      "date": 2020
-    },
-    {
-      "place": "Ireland",
-      "value": ":",
-      "date": 2020
-    },
-    {
-      "place": "Greece",
-      "value": 2.295,
-      "date": 2020
-    },
-    {
-      "place": "Spain",
-      "value": 2.236,
-      "date": 2020
-    },
-    {
-      "place": "France",
-      "value": 4.657,
-      "date": 2020
-    },
-    {
-      "place": "Croatia",
-      "value": 1.483,
-      "date": 2020
-    },
-    {
-      "place": "Italy",
-      "value": 2.942,
-      "date": 2020
-    },
-    {
-      "place": "Cyprus",
-      "value": 2.488,
-      "date": 2020
-    },
-    {
-      "place": "Latvia",
-      "value": 1.501,
-      "date": 2020
-    },
-    {
-      "place": "Lithuania",
-      "value": 2.396,
-      "date": 2020
-    },
-    {
-      "place": "Luxembourg",
-      "value": 14.618,
-      "date": 2020
-    },
-    {
-      "place": "Hungary",
-      "value": 1.648,
-      "date": 2020
-    },
-    {
-      "place": "Malta",
-      "value": 5.823,
-      "date": 2020
-    },
-    {
-      "place": "Netherlands",
-      "value": 7.175,
-      "date": 2020
-    },
-    {
-      "place": "Austria",
-      "value": 7.728,
-      "date": 2020
-    },
-    {
-      "place": "Poland",
-      "value": 4.492,
-      "date": 2020
-    },
-    {
-      "place": "Portugal",
-      "value": 1.612,
-      "date": 2020
-    },
-    {
-      "place": "Romania",
-      "value": 7.338,
-      "date": 2020
-    },
-    {
-      "place": "Slovenia",
-      "value": 3.576,
-      "date": 2020
-    },
-    {
-      "place": "Slovakia",
-      "value": 2.34,
-      "date": 2020
-    },
-    {
-      "place": "Finland",
-      "value": 20.993,
-      "date": 2020
-    },
-    {
-      "place": "Sweden",
-      "value": 14.664,
-      "date": 2020
-    },
-    {
-      "place": "Iceland",
-      "value": ":",
-      "date": 2020
-    },
-    {
-      "place": "Liechtenstein",
-      "value": ":",
-      "date": 2020
-    },
-    {
-      "place": "Norway",
-      "value": 2.61,
-      "date": 2020
-    },
-    {
-      "place": "Switzerland",
-      "value": ":",
-      "date": 2020
-    },
-    {
-      "place": "United_Kingdom",
-      "value": ":",
-      "date": 2020
-    },
-    {
-      "place": "Montenegro",
-      "value": 2.007,
-      "date": 2020
-    },
-    {
-      "place": "North_Macedonia",
-      "value": 716,
-      "date": 2020
-    },
-    {
-      "place": "Albania",
-      "value": ":",
-      "date": 2020
-    },
-    {
-      "place": "Serbia",
-      "value": 8.502,
-      "date": 2020
-    },
-    {
-      "place": "Turkiye",
-      "value": 1.291,
-      "date": 2020
-    },
-    {
-      "place": "Bosnia_and_Herzegovina",
-      "value": ":",
-      "date": 2020
-    },
-    {
-      "place": "Kosovo",
-      "value": ":",
-      "date": 2020
-    }
-  ]
+  {
+    "place": "Finland",
+    "value": 20.993,
+    "date": 2020
+  },
+  {
+    "place": "Bulgaria",
+    "value": 16.785,
+    "date": 2020
+  },
+  {
+    "place": "Sweden",
+    "value": 14.664,
+    "date": 2020
+  },
+  {
+    "place": "Luxembourg",
+    "value": 14.618,
+    "date": 2020
+  },
+  {
+    "place": "Estonia",
+    "value": 12.171,
+    "date": 2020
+  },
+  {
+    "place": "Serbia",
+    "value": 8.502,
+    "date": 2020
+  },
+  {
+    "place": "Austria",
+    "value": 7.728,
+    "date": 2020
+  },
+  {
+    "place": "Romania",
+    "value": 7.338,
+    "date": 2020
+  },
+  {
+    "place": "Netherlands",
+    "value": 7.175,
+    "date": 2020
+  },
+  {
+    "place": "Belgium",
+    "value": 5.899,
+    "date": 2020
+  },
+  {
+    "place": "Malta",
+    "value": 5.823,
+    "date": 2020
+  },
+  {
+    "place": "Germany",
+    "value": 4.824,
+    "date": 2020
+  },
+  {
+    "place": "European_Union",
+    "value": 4.808,
+    "date": 2020
+  },
+  {
+    "place": "France",
+    "value": 4.657,
+    "date": 2020
+  },
+  {
+    "place": "Poland",
+    "value": 4.492,
+    "date": 2020
+  },
+  {
+    "place": "Czechia",
+    "value": 3.598,
+    "date": 2020
+  },
+  {
+    "place": "Slovenia",
+    "value": 3.576,
+    "date": 2020
+  },
+  {
+    "place": "Denmark",
+    "value": 3.453,
+    "date": 2020
+  },
+  {
+    "place": "Italy",
+    "value": 2.942,
+    "date": 2020
+  },
+  {
+    "place": "Norway",
+    "value": 2.61,
+    "date": 2020
+  },
+  {
+    "place": "Cyprus",
+    "value": 2.488,
+    "date": 2020
+  },
+  {
+    "place": "Lithuania",
+    "value": 2.396,
+    "date": 2020
+  },
+  {
+    "place": "Slovakia",
+    "value": 2.34,
+    "date": 2020
+  },
+  {
+    "place": "Greece",
+    "value": 2.295,
+    "date": 2020
+  },
+  {
+    "place": "Spain",
+    "value": 2.236,
+    "date": 2020
+  },
+  {
+    "place": "Montenegro",
+    "value": 2.007,
+    "date": 2020
+  },
+  {
+    "place": "Hungary",
+    "value": 1.648,
+    "date": 2020
+  },
+  {
+    "place": "Portugal",
+    "value": 1.612,
+    "date": 2020
+  },
+  {
+    "place": "Latvia",
+    "value": 1.501,
+    "date": 2020
+  },
+  {
+    "place": "Croatia",
+    "value": 1.483,
+    "date": 2020
+  },
+  {
+    "place": "Turkiye",
+    "value": 1.291,
+    "date": 2020
+  },
+  {
+    "place": "North_Macedonia",
+    "value": 716,
+    "date": 2020
+  },
+  {
+    "place": "Ireland",
+    "value": ":",
+    "date": 2020
+  },
+  {
+    "place": "Iceland",
+    "value": ":",
+    "date": 2020
+  },
+  {
+    "place": "Liechtenstein",
+    "value": ":",
+    "date": 2020
+  },
+  {
+    "place": "Switzerland",
+    "value": ":",
+    "date": 2020
+  },
+  {
+    "place": "United_Kingdom",
+    "value": ":",
+    "date": 2020
+  },
+  {
+    "place": "Albania",
+    "value": ":",
+    "date": 2020
+  },
+  {
+    "place": "Bosnia_and_Herzegovina",
+    "value": ":",
+    "date": 2020
+  },
+  {
+    "place": "Kosovo",
+    "value": ":",
+    "date": 2020
+  }
+]
