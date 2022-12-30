@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Prata">
+  <link rel="stylesheet" href="../style/style.css" />
+  <title>weAct!</title>
+</head>
+
+<body>
+  
+  <nav class="navbar navbar-expand-lg bg-transparent position-fixed position-sticky pb-2">
+    <div class="container-fluid">
+      <a href="#main" class="skip">Vai al contenuto principale</a>
+      <a href="index.html" class="navbar-brand" aria-current="page">
+        <span class="title-paragraph text-white weact-logo" lang="en">weAct</span>
+      </a>
+      <button class="navbar-toggler btn-close-white" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="margin-top: 0.5rem;">
+          <li class="nav-item">
+            <a class="nav-link active text-white" href="campagne.html">Campagne</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active text-white" href="eventi.html">Eventi</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active text-white" href="registrazione.html">Registrazione</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active text-white" href="articoli.html">Articoli</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active text-white" href="about.html" lang="en">About</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <header class="hero d-flex justify-content-center align-items-center" id="main">
+    <div class="row">
+      <div class="column">
+        <h1 class="text-black title-paragraph text-center text-highlighted-yellow" lang="en">
+          weAct
+        </h1>
+        <p class="text-black text-center text-highlighted-yellow" lang="en">
+          data-driven activism for the planet
+        </p>
+      </div>
+    </div>
+  </header>
+
+  <section ng-app="myApp">
+    <div class="container">
+      <div class="row">
+        <div class="col col-lg-5" style="margin-top: 2rem; margin-bottom: 2rem;">
+          <div ng-controller="WatchCtrl" aria-live="off">
+            <div class="watch_card">
+              <div class="watch_card-body">
+                <p>
+                  <span class="title-paragraph" id="dayweek" lang="en">{{date | date:"EEEE"}}</span><span id="day"> &sdot; {{date
+                    |
+                    date:"dd.MM.yyyy"}}</span>
+                </p>
+                <p class="calendar">
+                  <span id="lun">L</span> &sdot; <span id="mar">M</span> &sdot; <span id="mer">M</span> &sdot; <span
+                    id="gio">G</span> &sdot; <span id="ven">V</span> &sdot; <span id="sab">S</span> &sdot; <span
+                    id="dom">D</span>
+                </p>
+                <p>-</p>
+                <p id="hour">
+                  {{date | date:"HH:mm:ss"}}
+                </p>
+              </div>
+              <img src="../assets/img/cardmaterial/mountainsnosun.png" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="col col-lg-7" style="margin-top: 2rem; margin-bottom: 2rem;">
+          <div class="watch_card" ng-controller="MoneyCtrl" onmouseover="cambiastilelista()">
+            <div class="watch_card-body">
+              <h1 class="title-paragraph soldiraccolti">Risorse raccolte da weAct</h1>
+              <p>-</p>
+              <ul>
+                <li class="mydata text-lightpink" ng-repeat="x in mydata"><span class="year">{{x.year}}</span> &sdot;
+                  <span class="money">{{x.money | currency}}</span>
+                </li>
+              </ul>
+            </div>
+            <img src="../assets/img/cardmaterial/mountains2.png" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col col-lg-11">
+          <h1 class="text-white title-paragraph">Che cos'è weAct?</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col col-lg-6">
+          <div class="carosello">
+            <img id="imgcarosello" src="" alt="carosello">
+            <div class="carosello-body">
+              <p id="indicecarosello"></p>
+              <p id="pcarosello" class="text-black"></p>
+              <br><button id="indietro" disabled>Indietro</button>
+              <button id="avanti">Avanti</button>
+            </div>
+          </div>
+        </div>
+        <div class="col col-12 col-lg-5 p-3">
+          <h2 class="text-white title-paragraph" lang="en">Data-driven activism for the planet</h2>
+          <p class="text-white">
+            Una forma di attivismo guidata dai dati è quella che si basa sull'<b>utilizzo di dati e informazioni
+              scientifiche per sostenere le proprie richieste e le proprie campagne</b>.<br><br> In questo modo, gli
+            attivisti possono
+            fare affidamento su <b>fatti e prove concrete</b> per sostenere le loro posizioni e fare pressione sui
+            governi e
+            sull'industria perché adottino misure per proteggere la qualità dell'aria, l'acqua e l'ambiente in generale.
+            <br><br>L'attivismo guidato dai dati può essere particolarmente efficace poiché si basa su fatti e prove
+            concrete, e
+            può aiutare a sensibilizzare l'opinione pubblica e le autorità sulla questione dell'inquinamento dell'aria e
+            dell'impatto del cambiamento climatico. Inoltre, può fornire a noi attivisti una <b>base solida su cui
+              basare le
+              nostre richieste e le nostre campagne</b>, rendendole <b>più credibili e facili da sostenere</b>.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col col-lg-12">
+          <div class="footer-body">
+            <a href="index.html"><span class="title-paragraph text-blue weact-logo" lang="en">weAct</span></a>
+            <p class="text-blue" lang="en">data-driven activism</p>
+            <p class="text-blue">-</p>
+            <div class="footernav">
+              <ul>
+                <li>
+                  <a href="campagne.html">Campagne</a>
+                </li>
+                <li>
+                  <a href="eventi.html">Eventi</a>
+                </li>
+                <li>
+                  <a href="registrazione.html">Registrazione</a>
+                </li>
+                <li>
+                  <a href="articoli.html">Articoli</a>
+                </li>
+                <li>
+                  <a href="about.html" lang="en">About</a>
+                </li>
+              </ul>
+            </div>
+            <p class="text-blue">-</p>
+            <p class="text-lightpink" lang="en">Copyright ©2022 All rights reserved</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="js/javascript.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+  <script src="js/jquery.js"></script>
+  <script>
+    var app = angular.module("myApp", []);
+    app.controller('WatchCtrl', function ($scope, $interval) {
+      var date = new Date();
+      $scope.date = date;
+      $interval(function () {
+        var date = new Date();
+        $scope.date = date;
+      }, 1000);
+    });
+    app.controller('MoneyCtrl', function ($scope, $http) {
+      $http.get("https://samuelepeirone.github.io/data_eurostat/weact_revenues.json").then(function (response) {
+        $scope.mydata = response.data;
+      });
+    });
+
+  </script>
+</body>
+
+</html>

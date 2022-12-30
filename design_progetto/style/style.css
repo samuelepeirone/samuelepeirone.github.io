@@ -1,0 +1,523 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
+body {
+  background-color: #2b3a55;
+  overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+}
+
+#logo {
+  max-height: 64px;
+}
+
+.title-paragraph {
+  font-family: "DM Serif", serif;
+}
+
+.weact-logo {
+  font-size: 2.5rem;
+}
+
+.hero {
+  height: 80vh;
+  background-image: url(../assets/img/wallpaper.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.text-white b {
+  color: #FFDBA4;
+}
+
+.text-yellow {
+  color: #FFDBA4;
+}
+
+.text-pink {
+  color: #e8c4c4;
+}
+
+.text-lightpink {
+  color: #f2e5e5;
+}
+
+.text-red {
+  color: #ce7777;
+}
+
+.text-blue {
+  color: #2b3a55;
+}
+
+.text-highlighted-yellow {
+  background-color: rgba(255, 219, 164, 0.7176470588);
+}
+
+.text-highlighted-pink {
+  background-color: rgba(206, 119, 119, 0.8274509804);
+}
+
+.text-highlighted-red {
+  background-color: rgba(206, 119, 119, 0.9058823529);
+}
+
+.skip {
+  background-color: #ce7777;
+  color: white;
+  position: absolute;
+  padding: 1rem;
+  margin-right: 2rem;
+  left: -1000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.skip:focus {
+  position: static;
+  width: auto;
+  height: auto;
+}
+
+.skip:hover {
+  color: #263159;
+}
+
+.span_error_login {
+  color: #ce7777;
+  font-weight: 400;
+  font-size: 13px;
+}
+
+#check_validazione {
+  text-align: center;
+  border-radius: 12px;
+  width: 100%;
+  display: none;
+}
+
+#check_validazione i {
+  display: none;
+}
+
+#redirectmessage {
+  display: none;
+}
+
+.mandatory {
+  font-weight: 400;
+  color: #ce7777;
+}
+
+.watch_card {
+  text-align: center;
+  color: white;
+  box-shadow: 2px 2px 4px 2px #000000;
+  border-radius: 24px;
+}
+
+.watch_card-body {
+  text-align: center;
+  color: white;
+  padding: 3rem;
+}
+
+.watch_card #day {
+  font-size: 2rem;
+}
+
+.watch_card #dayweek {
+  font-size: 2.5rem;
+  font-family: "Prata", serif;
+  color: #FFDBA4;
+}
+
+.watch_card #hour {
+  font-size: 2.75rem;
+  font-family: Prata;
+}
+
+.calendar {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.calendar span {
+  padding: 0.5rem;
+}
+
+.giornoattuale {
+  color: #FFDBA4;
+  font-size: 1.6rem;
+  font-weight: 400;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.6rem;
+}
+
+.watch_card img {
+  width: 100%;
+  border-bottom-left-radius: 24px;
+  border-bottom-right-radius: 24px;
+  margin-top: -12.5rem;
+}
+
+.mydata {
+  list-style-type: none;
+  font-size: 2rem;
+}
+
+.year {
+  font-size: 1.75rem;
+}
+
+.money {
+  font-size: 2rem;
+  font-family: "Prata", serif;
+}
+
+.soldiraccolti {
+  font-size: 2.5rem;
+  font-family: "Prata", serif;
+}
+
+.primarigasoldi {
+  color: #FFDBA4;
+}
+
+.primarigasoldi .year {
+  font-size: 2.2rem;
+}
+
+.primarigasoldi .money {
+  font-size: 2.5rem;
+}
+
+.carosello {
+  background-color: white;
+  border-radius: 24px;
+  text-align: center;
+}
+
+.carosello-body {
+  padding: 2rem;
+}
+
+.carosello-body button {
+  width: 13rem;
+  font-family: "Poppins", sans-serif;
+  padding-top: 0.594rem;
+  padding-bottom: 0.594rem;
+  padding-left: 1.194rem;
+  padding-right: 1.194rem;
+  background-color: rgba(43, 58, 85, 0.0509803922);
+  border: 1.5px solid #495579;
+  color: #495579;
+  border-radius: 24px;
+  cursor: pointer;
+}
+
+.carosello-body button:hover {
+  color: #e8c4c4;
+  border: 1.5px solid #e8c4c4;
+  background-color: rgba(232, 196, 196, 0);
+}
+
+.carosello-body button:disabled {
+  color: #9d9d9d;
+  border: 1.5px solid #9d9d9d;
+  pointer-events: none;
+}
+
+#imgcarosello {
+  width: 100%;
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+}
+
+#indicecarosello {
+  font-family: "Prata", serif;
+}
+
+.card-title {
+  font-size: 1.35rem;
+}
+
+.iscriviticlass button {
+  border: none;
+  background-color: white;
+  cursor: pointer;
+  color: #495579;
+  text-decoration: underline;
+}
+
+.iscriviticlass:hover button {
+  color: #ce7777;
+}
+
+.iscriviticlass:hover i {
+  color: #ce7777;
+}
+
+.iscrittoclass button {
+  border: none;
+  background-color: white;
+  cursor: not-allowed;
+  color: black;
+  text-decoration: none;
+}
+
+.bi-chevron-compact-down {
+  border-radius: 50px;
+  padding: 5px;
+}
+
+.div-copy:hover .bi-chevron-compact-down {
+  color: #ce7777;
+}
+
+.div-copy:hover .bi-chevron-compact-up {
+  color: #ce7777;
+}
+
+.div-copy {
+  color: #495579;
+}
+
+.div-copy:hover {
+  text-decoration: underline;
+  -webkit-text-decoration-color: #ce7777;
+          text-decoration-color: #ce7777;
+  cursor: pointer;
+}
+
+.card {
+  margin: 1rem;
+}
+
+.card img {
+  width: 18rem;
+  margin-left: -0.81rem;
+  margin-top: -0.02rem;
+}
+
+.cardcampagne {
+  margin: auto;
+  background-color: white;
+  text-align: left;
+  border-radius: 24px;
+  padding: 1.2rem;
+}
+
+.cardcampagne h4 {
+  margin-top: 1rem;
+  margin-left: 3rem;
+}
+
+.buttonsdiv {
+  margin-top: 1.8rem;
+  margin-left: 3rem;
+  margin-bottom: 1rem;
+}
+
+.buttonsdiv button {
+  margin-right: 0.8rem;
+  margin-top: 0.8rem;
+}
+
+.buttoncanvas {
+  width: 13rem;
+  font-family: "Poppins", sans-serif;
+  padding-top: 0.594rem;
+  padding-bottom: 0.594rem;
+  padding-left: 1.194rem;
+  padding-right: 1.194rem;
+  background-color: white;
+  border: 1.5px solid #FFDBA4;
+  border-radius: 24px;
+  cursor: pointer;
+}
+
+.buttoncanvas:hover {
+  color: #FFDBA4;
+}
+
+.buttoncanvasselected {
+  width: 13rem;
+  font-family: "Poppins", sans-serif;
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
+  background-color: #FFDBA4;
+  border: none;
+  border-radius: 24px;
+  cursor: not-allowed;
+}
+
+.cardcampagne-body {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+
+.card-bodycampagne canvas {
+  margin: auto;
+}
+
+.fontechart {
+  font-size: 13px;
+  color: #9d9d9d;
+}
+
+.fontechart a {
+  color: #9d9d9d;
+}
+
+.fontechart a:hover {
+  color: #495579;
+}
+
+.author-paragraph {
+  margin-left: 2rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.author-paragraph img {
+  width: 3rem;
+}
+
+.author-paragraph span {
+  font-size: large;
+  margin-left: 0.5rem;
+}
+
+.image-box {
+  max-width: 28rem;
+  margin: 2rem;
+  background-color: white;
+  border-radius: 24px;
+  text-align: center;
+}
+
+.image-box img {
+  width: 100%;
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+}
+
+.image-box p {
+  padding: 2rem;
+}
+
+footer {
+  text-align: center;
+  background-color: #e8c4c4;
+  margin-top: 5rem;
+}
+
+.footer-body {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.footer-body a {
+  color: #2b3a55;
+  text-decoration: none;
+}
+
+.footer-body a:hover {
+  color: #495579;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+}
+
+.footernav ul li a {
+  text-decoration: none;
+  color: #2b3a55;
+  padding: 1rem;
+}
+
+.footernav ul {
+  list-style: none;
+}
+
+.footernav ul li {
+  display: inline;
+}
+
+.footernav ul li a:hover {
+  font-weight: 500;
+  color: #495579;
+  text-decoration: underline;
+}
+
+.about_link {
+  text-align: center;
+  background-color: #FFDBA4;
+  border-radius: 24px;
+}
+
+#mappa iframe {
+  border-bottom-left-radius: 24px;
+  border-bottom-right-radius: 24px;
+  margin-bottom: -0.45rem;
+}
+
+.about_link-body {
+  padding: 3rem;
+}
+
+.about_link-body h2 {
+  margin-bottom: 3rem;
+}
+
+.about_link-body ul {
+  list-style: none;
+  margin-right: 1.3rem;
+  margin-bottom: 3rem;
+}
+
+.about_link-body ul li {
+  margin-bottom: 2.5rem;
+  display: inline;
+  margin-right: 0.3rem;
+}
+
+.about_link-body ul li a {
+  border: 1px solid #2b3a55;
+  padding-top: 0.8rem;
+  padding-bottom: 1.2rem;
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
+  border-radius: 40px;
+  color: #2b3a55;
+  text-decoration: none;
+}
+
+.about_link-body ul li a:hover {
+  background-color: #2b3a55;
+  color: #FFDBA4;
+}
+
+.about_link-body ul li button {
+  background-color: #FFDBA4;
+  border: 1px solid #2b3a55;
+  padding-top: 0.8rem;
+  padding-bottom: 1.2rem;
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
+  border-radius: 40px;
+  color: #2b3a55;
+  text-decoration: none;
+}
+
+.about_link-body ul li button:hover {
+  background-color: #2b3a55;
+  color: #FFDBA4;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,464 @@
+$yellow: #fffbeb;
+$pastelyellow: #FFDBA4;
+$lightblue: #495579;
+$darkblue: #263159;
+$navyblue: #2b3a55;
+$violet: #251749;
+$pastelred: #ce7777;
+$pastelpink: #e8c4c4;
+$lightpastelpink: #f2e5e5;
+$softgrey: #9d9d9d;
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+
+body {
+  background-color: $navyblue;
+  overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+}
+#logo {
+  max-height: 64px;
+}
+.title-paragraph {
+  font-family: "DM Serif", serif;
+}
+.weact-logo{
+  font-size: 2.5rem;
+}
+.hero {
+  height: 80vh;
+  background-image: url(../assets/img/wallpaper.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.text-white b{
+  color: $pastelyellow;
+}
+.text-yellow{
+  color: $pastelyellow;
+}
+.text-pink{
+  color: $pastelpink;
+}
+.text-lightpink{
+  color: $lightpastelpink;
+}
+.text-red{
+  color: $pastelred;
+}
+.text-blue{
+  color: $navyblue;
+}
+.text-highlighted-yellow{
+  background-color: #ffdba4b7;
+}
+.text-highlighted-pink{
+  background-color: #ce7777d3;
+}
+.text-highlighted-red{
+  background-color: #ce7777e7; //#2b3a55d8;
+}
+.skip{
+  background-color: $pastelred;
+  color: white;
+  position: absolute;
+  padding: 1rem;
+  margin-right: 2rem;
+  left: -1000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+.skip:focus {
+  position: static;
+  width: auto;
+  height: auto;
+}
+.skip:hover {
+  color: $darkblue;
+}
+
+
+//REGISTRAZIONE
+.span_error_login {
+  color: $pastelred;
+  font-weight: 400;
+  font-size: 13px;
+}
+#check_validazione{
+  text-align: center;
+  border-radius: 12px;
+  width: 100%;
+  display: none;
+}
+#check_validazione i{
+  display: none;
+}
+#redirectmessage{
+  display: none;
+}
+.mandatory{
+  font-weight: 400;
+  color: $pastelred;
+}
+//INDEX
+.watch_card{
+  text-align: center;
+  color: white;
+  box-shadow: 2px 2px 4px 2px #000000;
+  border-radius: 24px;
+}
+.watch_card-body{
+  text-align: center;
+  color: white;
+  padding: 3rem;
+}
+.watch_card #day{
+  font-size: 2rem;
+}
+.watch_card #dayweek{
+  font-size: 2.5rem;
+  font-family: "Prata", serif;
+  color: $pastelyellow;
+}
+.watch_card #hour{
+  font-size: 2.75rem;
+  font-family: Prata;
+}
+.calendar{
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+.calendar span{
+  padding: 0.5rem;
+}
+.giornoattuale{
+  color: $pastelyellow;
+  font-size: 1.6rem;
+  font-weight: 400;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.6rem;
+}
+.watch_card img{
+  width: 100%;
+  border-bottom-left-radius: 24px;
+  border-bottom-right-radius: 24px;
+  margin-top: -12.5rem;
+}
+.mydata{
+  list-style-type: none;
+  font-size: 2rem;
+}
+.year{
+  font-size: 1.75rem;
+}
+.money{
+  font-size: 2rem;
+  font-family: "Prata", serif;
+}
+.soldiraccolti{
+  font-size: 2.5rem;
+  font-family: "Prata", serif;
+}
+.primarigasoldi{
+  color: $pastelyellow;
+}
+.primarigasoldi .year{
+  font-size: 2.2rem;
+}
+.primarigasoldi .money{
+  font-size: 2.5rem;
+}
+.carosello{
+  background-color: white;
+  border-radius: 24px;
+  text-align: center;
+}
+.carosello-body{
+  padding: 2rem;
+}
+.carosello-body button {
+  width: 13rem;
+  font-family: "Poppins", sans-serif;
+  padding-top: 0.594rem;
+  padding-bottom: 0.594rem;
+  padding-left: 1.194rem;
+  padding-right: 1.194rem;
+  background-color: #2b3a550d;
+  border: 1.5px solid $lightblue;
+  color: $lightblue;
+  border-radius: 24px;
+  cursor: pointer;
+}
+
+.carosello-body button:hover {
+  color: $pastelpink;
+  border: 1.5px solid $pastelpink;
+  background-color: #e8c4c400;
+}
+
+.carosello-body button:disabled{
+  color: $softgrey;
+  border: 1.5px solid $softgrey;
+  pointer-events: none;
+}
+
+#imgcarosello{
+  width: 100%;
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+}
+#indicecarosello{
+  font-family: "Prata", serif;
+}
+
+//EVENTI
+.card-title{
+  font-size: 1.35rem;
+}
+.iscriviticlass button{
+  border: none;
+  background-color: white;
+  cursor: pointer;
+  color: $lightblue;
+  text-decoration: underline;
+}
+.iscriviticlass:hover button{
+  color: $pastelred;
+}
+.iscriviticlass:hover i{
+  color: $pastelred;
+}
+.iscrittoclass button{
+  border: none;
+  background-color: white;
+  cursor: not-allowed;
+  color: black;
+  text-decoration: none;
+}
+.bi-chevron-compact-down{
+  border-radius: 50px;
+  padding: 5px;
+}
+.div-copy:hover .bi-chevron-compact-down{
+  color: $pastelred;
+}
+.div-copy:hover .bi-chevron-compact-up{
+  color: $pastelred;
+}
+.div-copy{
+  color: $lightblue;
+}
+.div-copy:hover{
+  text-decoration: underline;
+  text-decoration-color: $pastelred;
+  cursor: pointer;
+}
+.card{
+  margin: 1rem;
+}
+.card img{
+  width: 18rem;
+  margin-left: -0.81rem;
+  margin-top: -0.02rem;
+}
+
+//CAMPAGNE
+.cardcampagne {
+  margin: auto;
+  background-color: white;
+  text-align: left;
+  border-radius: 24px;
+  padding: 1.2rem;
+}
+
+.cardcampagne h4 {
+  margin-top: 1rem;
+  margin-left: 3rem;
+}
+
+.buttonsdiv {
+  margin-top: 1.8rem;
+  margin-left: 3rem;
+  margin-bottom: 1rem;
+}
+.buttonsdiv button{
+  margin-right: 0.8rem;
+  margin-top: 0.8rem;
+}
+
+.buttoncanvas {
+  width: 13rem;
+  font-family: "Poppins", sans-serif;
+  padding-top: 0.594rem;
+  padding-bottom: 0.594rem;
+  padding-left: 1.194rem;
+  padding-right: 1.194rem;
+  background-color: white;
+  border: 1.5px solid $pastelyellow;
+  border-radius: 24px;
+  cursor: pointer;
+}
+
+.buttoncanvas:hover {
+  color: $pastelyellow;
+}
+
+.buttoncanvasselected {
+  width: 13rem;
+  font-family: "Poppins", sans-serif;
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
+  background-color: $pastelyellow;
+  border: none;
+  border-radius: 24px;
+  cursor: not-allowed;
+}
+
+.cardcampagne-body {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+
+.card-bodycampagne canvas {
+  margin: auto;
+}
+.fontechart{
+  font-size: 13px;
+  color: $softgrey;
+}
+.fontechart a{
+  color: $softgrey;
+}
+.fontechart a:hover {
+  color: $lightblue;
+}
+
+//ARTICOLI
+
+.author-paragraph{
+  margin-left: 2rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+.author-paragraph img{
+  width: 3rem;
+}
+.author-paragraph span{
+  font-size: large;
+  margin-left: 0.5rem;
+}
+.image-box{
+  max-width: 28rem;
+  margin: 2rem;
+  background-color: white;
+  border-radius: 24px;
+  text-align: center;
+}
+.image-box img{
+  width: 100%;
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+}
+.image-box p{
+  padding: 2rem;
+}
+//ABOUT
+footer{
+  text-align: center;
+  background-color: $pastelpink;
+  margin-top: 5rem;
+}
+.footer-body{
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+}
+.footer-body a{
+  color: $navyblue;
+  text-decoration: none;
+}
+.footer-body a:hover{
+  color: $lightblue;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+}
+.footernav ul li a{
+  text-decoration: none;
+  color: $navyblue;
+  padding: 1rem;
+}
+.footernav ul{
+  list-style: none;
+}
+.footernav ul li{
+  display: inline;
+}
+.footernav ul li a:hover{
+  font-weight: 500;
+  color: $lightblue;
+  text-decoration: underline;
+}
+.about_link{
+  text-align: center;
+  background-color: $pastelyellow;
+  border-radius: 24px;
+}
+#mappa iframe{
+  border-bottom-left-radius: 24px;
+  border-bottom-right-radius: 24px;
+  margin-bottom: -0.45rem;
+}
+.about_link-body{
+  padding: 3rem;
+}
+.about_link-body h2{
+  margin-bottom: 3rem;
+}
+.about_link-body ul{
+  list-style: none;
+  margin-right: 1.3rem;
+  margin-bottom: 3rem;
+}
+.about_link-body ul li{
+  margin-bottom: 2.5rem;
+  display: inline;
+  margin-right: 0.3rem;
+}
+.about_link-body ul li a{
+  border: 1px solid $navyblue;
+  padding-top: 0.8rem;
+  padding-bottom: 1.2rem;
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
+  border-radius: 40px;
+  color: $navyblue;
+  text-decoration: none;
+}
+.about_link-body ul li a:hover{
+  background-color: $navyblue;
+  color: $pastelyellow;
+}
+.about_link-body ul li button{
+  background-color: $pastelyellow;
+  border: 1px solid $navyblue;
+  padding-top: 0.8rem;
+  padding-bottom: 1.2rem;
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
+  border-radius: 40px;
+  color: $navyblue;
+  text-decoration: none;
+}
+.about_link-body ul li button:hover{
+  background-color: $navyblue;
+  color: $pastelyellow;
+}
