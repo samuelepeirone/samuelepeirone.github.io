@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="../style/style.css" />
+    <title>wCampagne</title>
+  </head>
+
+  <body>
+    <nav
+      class="navbar navbar-expand-lg bg-transparent position-fixed position-sticky pb-2"
+      role="navigation"
+    >
+      <div class="container-fluid">
+        <a href="#maincampagne" class="skip">Vai al contenuto principale</a>
+        <a href="index.html" class="navbar-brand">
+          <span class="title-paragraph text-white weact-logo" lang="en"
+            >weAct</span
+          >
+        </a>
+        <button
+          class="navbar-toggler btn-close-white"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul
+            class="navbar-nav me-auto mb-2 mb-lg-0"
+            style="margin-top: 0.5rem"
+          >
+            <li class="nav-item">
+              <a
+                class="nav-link active text-white"
+                aria-current="page"
+                href="campagne.html"
+                >Campagne</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-white" href="eventi.html"
+                >Eventi</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-white" href="registrazione.html"
+                >Registrazione</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-white" href="articoli.html"
+                >Articoli</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-white" href="about.html" lang="en"
+                >About</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <header
+      class="hero d-flex justify-content-center align-items-center"
+      style="background-image: url(../assets/img/campagne.jpg)"
+      id="maincampagne"
+    >
+      <div class="row">
+        <div class="column">
+          <h1
+            class="text-black title-paragraph text-center text-highlighted-yellow"
+          >
+            Campagne
+          </h1>
+          <p class="text-black text-center text-highlighted-yellow">
+            Tutto ciò per cui ci spendiamo. Tutto il giorno, tutti i giorni.
+          </p>
+        </div>
+      </div>
+    </header>
+
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col col-lg-7">
+            <h1 class="text-white title-paragraph" style="margin-top: 2rem">
+              Ecco quello che facciamo:
+            </h1>
+          </div>
+        </div>
+        <br />
+        <div class="row justify-content-center">
+          <div class="col-11">
+            <h2 class="title-paragraph">
+              <span class="text-red">1. </span
+              ><span class="text-white">Qualità dell'aria</span>
+            </h2>
+          </div>
+        </div>
+        <br />
+        <div class="row">
+          <div class="col col-lg-7">
+            <div class="cardcampagne">
+              <h4>Misura della qualità dell'aria a New York</h4>
+              <div class="buttonsdiv">
+                <button
+                  class="buttoncanvasselected"
+                  onclick="assigndatacanvas()"
+                  id="tuttibutton"
+                  disabled
+                >
+                  Tutti
+                </button>
+                <button
+                  class="buttoncanvas"
+                  onclick="mostranordcanvas()"
+                  id="nordbutton"
+                >
+                  Quartieri a Nord
+                </button>
+              </div>
+              <div class="cardcampagne-body">
+                <div class="chart-container ps-lg-5 ps-3">
+                  <canvas id="canvas"></canvas>
+                </div>
+
+                <br />
+                <p class="fontechart">
+                  Fonte:
+                  <a
+                    href="https://data.cityofnewyork.us/resource/c3uy-2p5r.json"
+                    target="_blank"
+                    >Città di New York</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col col-lg-5" style="padding: 2rem">
+            <h3 class="text-yellow title-paragraph">Situazione attuale</h3>
+            <br />
+            <p class="text-white">
+              La qualità dell'aria a New York è stata un
+              <b>problema di lunga data</b>. La città è nota per la sua
+              <b>alta densità di traffico</b> e il suo sistema di trasporto
+              pubblico affollato, entrambi dei quali contribuiscono alle
+              emissioni di inquinanti atmosferici. <br /><br />New York ha anche
+              una grande quantità di
+              <b>edifici</b>
+              alti, che possono <b>impedire la circolazione dell'aria</b> e
+              contribuire all'<b>accumulo di inquinanti</b>. Nonostante gli
+              sforzi per migliorare la qualità dell'aria, come la promozione dei
+              trasporti pubblici e l'adozione di veicoli elettrici, la città
+              continua a lottare per mantenere livelli di inquinamento
+              accettabili. <br /><br />Tuttavia, negli ultimi anni ci sono stati
+              progressi significativi nella
+              <b>riduzione delle emissioni di inquinanti</b>
+              atmosferici a New York, e la qualità dell'aria sta lentamente
+              migliorando.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col col-lg-7" style="padding: 2rem">
+            <h3 class="text-yellow title-paragraph">Cosa facciamo</h3>
+            <br />
+            <p class="text-white">
+              L'attivismo per l'aria pulita in città è un movimento globale che
+              mira a
+              <b
+                >migliorare la qualità dell'aria che respiriamo nelle nostre
+                città</b
+              >. Ci sono molti modi in cui le persone possono partecipare
+              attivamente all'attivismo per l'aria pulita, sia a livello
+              individuale che collettivo. <br /><br />
+              A livello individuale, le persone possono
+              <b>adottare stili di vita più sostenibili</b>, come utilizzare
+              <b>trasporti pubblici o veicoli elettrici</b> invece di quelli a
+              benzina o diesel, o utilizzare <b>energie rinnovabili</b> per
+              riscaldare le proprie case. Inoltre, possono fare la loro parte
+              per ridurre le emissioni di inquinanti atmosferici promuovendo
+              pratiche sostenibili nella propria vita quotidiana, come il
+              <b>riciclaggio e il compostaggio dei rifiuti</b>. <br /><br />
+              A livello collettivo, le persone possono partecipare a
+              <b>manifestazioni e proteste</b> per sensibilizzare l'opinione
+              pubblica e le autorità sulla questione dell'inquinamento
+              dell'aria.
+            </p>
+          </div>
+          <div class="col col-lg-5">
+            <div class="cardcampagne">
+              <h4>Sostanze tossiche presenti nell'aria di New York City</h4>
+              <div class="cardcampagne-body">
+                <canvas id="piechart"></canvas>
+                <br />
+                <p class="fontechart">
+                  Fonte:
+                  <a
+                    href="https://data.cityofnewyork.us/resource/c3uy-2p5r.json"
+                    target="_blank"
+                    >Città di New York</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-11">
+            <h2 class="title-paragraph" style="margin-top: 2rem">
+              <span class="text-red">2. </span
+              ><span class="text-white">Rifiuti</span>
+            </h2>
+          </div>
+        </div>
+        <br />
+        <div class="row">
+          <div class="col col-lg-4">
+            <h3 class="text-yellow title-paragraph">Situazione attuale</h3>
+            <br />
+            <p class="text-white">
+              La media di rifiuti pro capite <b>dipende da molti fattori</b>,
+              come il livello di sviluppo economico, il tipo di economia, la
+              densità di popolazione e le abitudini di consumo dei singoli
+              individui. <br /><br />È importante notare che aumentare la media
+              di rifiuti pro capite può avere conseguenze negative per
+              l'ambiente e la salute umana, quindi è
+              <b
+                >importante promuovere pratiche sostenibili di gestione dei
+                rifiuti</b
+              >
+              e <b>ridurre la produzione di rifiuti inutili</b>.
+            </p>
+          </div>
+          <div class="col col-lg-8">
+            <div class="cardcampagne">
+              <h4>Rifiuti pro-capite</h4>
+              <div class="buttonsdiv">
+                <button
+                  class="buttoncanvasselected"
+                  onclick="mediaeuropea()"
+                  id="eu_button"
+                  disabled
+                >
+                  Media europea
+                </button>
+                <button
+                  class="buttoncanvas"
+                  onclick="paesieuropei()"
+                  id="paesi_button"
+                >
+                  Tutti i paesi
+                </button>
+              </div>
+              <div class="cardcampagne-body">
+                <div class="chart-container ps-lg-5 ps-3">
+                  <canvas id="rifiuti"></canvas>
+                </div>
+
+                <br />
+                <p class="fontechart">
+                  Chilogrammi di rifiuti prodotti annualmente pro-capite.
+                </p>
+                <p class="fontechart">
+                  Fonte:
+                  <a
+                    href="https://ec.europa.eu/eurostat/databrowser/view/CEI_PC034/default/table?lang=en&category=env.env_was.env_wasgt"
+                    target="_blank"
+                    >Eurostat</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col col-lg-7" style="padding-top: 2rem">
+            <div class="cardcampagne">
+              <h4>Paesi europei con più rifiuti pro-capite</h4>
+              <div class="cardcampagne-body">
+                <canvas id="rifiutipie"></canvas>
+                <br />
+                <p class="fontechart">
+                  Chilogrammi di rifiuti prodotti annualmente pro-capite.
+                </p>
+                <p class="fontechart">
+                  Fonte:
+                  <a
+                    href="https://ec.europa.eu/eurostat/databrowser/view/CEI_PC034/default/table?lang=en&category=env.env_was.env_wasgt"
+                    target="_blank"
+                    >Eurostat</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col col-lg-5" style="padding-top: 3rem">
+            <h3 class="text-yellow title-paragraph">Policies</h3>
+            <br />
+            <p class="text-white">
+              In <b>Europa</b>, i rifiuti sono una questione importante che
+              riguarda la gestione dei materiali che non vengono utilizzati o
+              che non sono più utili. La quantità di rifiuti prodotta varia
+              notevolmente da paese a paese, ma in generale i paesi dell'Unione
+              Europea (UE) producono quantità significative di rifiuti.
+              <br /><br />
+              Esistono diverse politiche e strategie a livello UE per gestire i
+              rifiuti in modo sostenibile, come la
+              <b>Direttiva sui rifiuti</b>, che fissa obiettivi ambiziosi per la
+              riduzione della quantità di rifiuti prodotta e per la promozione
+              del riciclaggio e del riutilizzo. Inoltre, l'UE ha adottato una
+              serie di normative per favorire lo
+              <b
+                >sviluppo di tecnologie innovative per la gestione dei
+                rifiuti</b
+              >
+              e per promuovere <b>pratiche sostenibili</b> nella produzione e
+              nell'utilizzo dei materiali.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col col-lg-12">
+            <div class="footer-body" role="navigation">
+              <a href="index.html"
+                ><span class="title-paragraph text-blue weact-logo" lang="en"
+                  >weAct</span
+                ></a
+              >
+              <p class="text-blue" lang="en">data-driven activism</p>
+              <p class="text-blue">-</p>
+              <div class="footernav">
+                <ul>
+                  <li>
+                    <a href="campagne.html">Campagne</a>
+                  </li>
+                  <li>
+                    <a href="eventi.html">Eventi</a>
+                  </li>
+                  <li>
+                    <a href="registrazione.html">Registrazione</a>
+                  </li>
+                  <li>
+                    <a href="articoli.html">Articoli</a>
+                  </li>
+                  <li>
+                    <a href="about.html" lang="en">About</a>
+                  </li>
+                </ul>
+              </div>
+              <p class="text-blue">-</p>
+              <p class="text-lightpink" lang="en">
+                Copyright ©2022 All rights reserved
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <script src="js/javascript.js"></script>
+  </body>
+</html>

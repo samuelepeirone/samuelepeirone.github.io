@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
 body {
   background-color: #2b3a55;
   overflow-x: hidden;
@@ -29,11 +28,11 @@ body {
 }
 
 .text-white b {
-  color: #FFDBA4;
+  color: #ffdba4;
 }
 
 .text-yellow {
-  color: #FFDBA4;
+  color: #ffdba4;
 }
 
 .text-pink {
@@ -133,7 +132,7 @@ body {
 .watch_card #dayweek {
   font-size: 2.5rem;
   font-family: "Prata", serif;
-  color: #FFDBA4;
+  color: #ffdba4;
 }
 
 .watch_card #hour {
@@ -151,7 +150,7 @@ body {
 }
 
 .giornoattuale {
-  color: #FFDBA4;
+  color: #ffdba4;
   font-size: 1.6rem;
   font-weight: 400;
   text-decoration: underline;
@@ -185,8 +184,22 @@ body {
   font-family: "Prata", serif;
 }
 
+@media only screen and (max-width: 992px) {
+  .year {
+    font-size: 1rem;
+  }
+  .money {
+    font-size: 1.25rem;
+  }
+  .primarigasoldi .year {
+    font-size: 1.25rem;
+  }
+  .primarigasoldi .money {
+    font-size: 1.5rem;
+  }
+}
 .primarigasoldi {
-  color: #FFDBA4;
+  color: #ffdba4;
 }
 
 .primarigasoldi .year {
@@ -221,6 +234,11 @@ body {
   cursor: pointer;
 }
 
+@media only screen and (max-width: 996px) {
+  .carosello-body button {
+    width: 6.5rem;
+  }
+}
 .carosello-body button:hover {
   color: #e8c4c4;
   border: 1.5px solid #e8c4c4;
@@ -290,8 +308,7 @@ body {
 
 .div-copy:hover {
   text-decoration: underline;
-  -webkit-text-decoration-color: #ce7777;
-          text-decoration-color: #ce7777;
+  text-decoration-color: #ce7777;
   cursor: pointer;
 }
 
@@ -337,13 +354,13 @@ body {
   padding-left: 1.194rem;
   padding-right: 1.194rem;
   background-color: white;
-  border: 1.5px solid #FFDBA4;
+  border: 1.5px solid #ffdba4;
   border-radius: 24px;
   cursor: pointer;
 }
 
 .buttoncanvas:hover {
-  color: #FFDBA4;
+  color: #ffdba4;
 }
 
 .buttoncanvasselected {
@@ -353,7 +370,7 @@ body {
   padding-bottom: 0.6rem;
   padding-left: 1.2rem;
   padding-right: 1.2rem;
-  background-color: #FFDBA4;
+  background-color: #ffdba4;
   border: none;
   border-radius: 24px;
   cursor: not-allowed;
@@ -363,11 +380,20 @@ body {
   font-family: "Poppins", sans-serif;
   text-align: center;
 }
-
-.card-bodycampagne canvas {
+.cardcampagne-body canvas {
   margin: auto;
 }
+.cardcampagne-body .chart-container {
+  width: 600px;
+  height: 300px;
+}
 
+@media only screen and (max-width: 1200px) {
+  .cardcampagne-body .chart-container {
+    width: 90%;
+    height: 45%;
+  }
+}
 .fontechart {
   font-size: 13px;
   color: #9d9d9d;
@@ -459,7 +485,7 @@ footer {
 
 .about_link {
   text-align: center;
-  background-color: #FFDBA4;
+  background-color: #ffdba4;
   border-radius: 24px;
 }
 
@@ -500,13 +526,21 @@ footer {
   text-decoration: none;
 }
 
+@media only screen and (max-width: 600px) {
+  .about_link-body ul li {
+    display: block;
+  }
+  .about_link-body ul li button {
+    margin: -1rem;
+  }
+}
 .about_link-body ul li a:hover {
   background-color: #2b3a55;
-  color: #FFDBA4;
+  color: #ffdba4;
 }
 
 .about_link-body ul li button {
-  background-color: #FFDBA4;
+  background-color: #ffdba4;
   border: 1px solid #2b3a55;
   padding-top: 0.8rem;
   padding-bottom: 1.2rem;
@@ -519,5 +553,7 @@ footer {
 
 .about_link-body ul li button:hover {
   background-color: #2b3a55;
-  color: #FFDBA4;
-}/*# sourceMappingURL=style.css.map */
+  color: #ffdba4;
+}
+
+/*# sourceMappingURL=style.css.map */

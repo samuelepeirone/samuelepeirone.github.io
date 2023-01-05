@@ -1,5 +1,5 @@
 $yellow: #fffbeb;
-$pastelyellow: #FFDBA4;
+$pastelyellow: #ffdba4;
 $lightblue: #495579;
 $darkblue: #263159;
 $navyblue: #2b3a55;
@@ -11,7 +11,6 @@ $softgrey: #9d9d9d;
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
 
 body {
   background-color: $navyblue;
@@ -25,7 +24,7 @@ body {
 .title-paragraph {
   font-family: "DM Serif", serif;
 }
-.weact-logo{
+.weact-logo {
   font-size: 2.5rem;
 }
 .hero {
@@ -35,34 +34,34 @@ body {
   background-size: cover;
   background-position: center;
 }
-.text-white b{
+.text-white b {
   color: $pastelyellow;
 }
-.text-yellow{
+.text-yellow {
   color: $pastelyellow;
 }
-.text-pink{
+.text-pink {
   color: $pastelpink;
 }
-.text-lightpink{
+.text-lightpink {
   color: $lightpastelpink;
 }
-.text-red{
+.text-red {
   color: $pastelred;
 }
-.text-blue{
+.text-blue {
   color: $navyblue;
 }
-.text-highlighted-yellow{
+.text-highlighted-yellow {
   background-color: #ffdba4b7;
 }
-.text-highlighted-pink{
+.text-highlighted-pink {
   background-color: #ce7777d3;
 }
-.text-highlighted-red{
+.text-highlighted-red {
   background-color: #ce7777e7; //#2b3a55d8;
 }
-.skip{
+.skip {
   background-color: $pastelred;
   color: white;
   position: absolute;
@@ -83,61 +82,60 @@ body {
   color: $darkblue;
 }
 
-
 //REGISTRAZIONE
 .span_error_login {
   color: $pastelred;
   font-weight: 400;
   font-size: 13px;
 }
-#check_validazione{
+#check_validazione {
   text-align: center;
   border-radius: 12px;
   width: 100%;
   display: none;
 }
-#check_validazione i{
+#check_validazione i {
   display: none;
 }
-#redirectmessage{
+#redirectmessage {
   display: none;
 }
-.mandatory{
+.mandatory {
   font-weight: 400;
   color: $pastelred;
 }
 //INDEX
-.watch_card{
+.watch_card {
   text-align: center;
   color: white;
   box-shadow: 2px 2px 4px 2px #000000;
   border-radius: 24px;
 }
-.watch_card-body{
+.watch_card-body {
   text-align: center;
   color: white;
   padding: 3rem;
 }
-.watch_card #day{
+.watch_card #day {
   font-size: 2rem;
 }
-.watch_card #dayweek{
+.watch_card #dayweek {
   font-size: 2.5rem;
   font-family: "Prata", serif;
   color: $pastelyellow;
 }
-.watch_card #hour{
+.watch_card #hour {
   font-size: 2.75rem;
   font-family: Prata;
 }
-.calendar{
+.calendar {
   font-size: 1.2rem;
   margin-bottom: 2rem;
 }
-.calendar span{
+.calendar span {
   padding: 0.5rem;
 }
-.giornoattuale{
+.giornoattuale {
   color: $pastelyellow;
   font-size: 1.6rem;
   font-weight: 400;
@@ -145,42 +143,58 @@ body {
   text-decoration-thickness: 1px;
   text-underline-offset: 0.6rem;
 }
-.watch_card img{
+.watch_card img {
   width: 100%;
   border-bottom-left-radius: 24px;
   border-bottom-right-radius: 24px;
   margin-top: -12.5rem;
 }
-.mydata{
+.mydata {
   list-style-type: none;
   font-size: 2rem;
 }
-.year{
+.year {
   font-size: 1.75rem;
 }
-.money{
+.money {
   font-size: 2rem;
   font-family: "Prata", serif;
 }
-.soldiraccolti{
+.soldiraccolti {
   font-size: 2.5rem;
   font-family: "Prata", serif;
 }
-.primarigasoldi{
+@media only screen and (max-width: 992px) {
+  .year {
+    font-size: 1rem;
+  }
+  .money {
+    font-size: 1.25rem;
+  }
+  .primarigasoldi {
+    .year {
+      font-size: 1.25rem;
+    }
+    .money {
+      font-size: 1.5rem;
+    }
+  }
+}
+.primarigasoldi {
   color: $pastelyellow;
 }
-.primarigasoldi .year{
+.primarigasoldi .year {
   font-size: 2.2rem;
 }
-.primarigasoldi .money{
+.primarigasoldi .money {
   font-size: 2.5rem;
 }
-.carosello{
+.carosello {
   background-color: white;
   border-radius: 24px;
   text-align: center;
 }
-.carosello-body{
+.carosello-body {
   padding: 2rem;
 }
 .carosello-body button {
@@ -197,73 +211,80 @@ body {
   cursor: pointer;
 }
 
+@media only screen and (max-width: 996px) {
+  .carosello-body {
+    button {
+      width: 6.5rem;
+    }
+  }
+}
 .carosello-body button:hover {
   color: $pastelpink;
   border: 1.5px solid $pastelpink;
   background-color: #e8c4c400;
 }
 
-.carosello-body button:disabled{
+.carosello-body button:disabled {
   color: $softgrey;
   border: 1.5px solid $softgrey;
   pointer-events: none;
 }
 
-#imgcarosello{
+#imgcarosello {
   width: 100%;
   border-top-left-radius: 24px;
   border-top-right-radius: 24px;
 }
-#indicecarosello{
+#indicecarosello {
   font-family: "Prata", serif;
 }
 
 //EVENTI
-.card-title{
+.card-title {
   font-size: 1.35rem;
 }
-.iscriviticlass button{
+.iscriviticlass button {
   border: none;
   background-color: white;
   cursor: pointer;
   color: $lightblue;
   text-decoration: underline;
 }
-.iscriviticlass:hover button{
+.iscriviticlass:hover button {
   color: $pastelred;
 }
-.iscriviticlass:hover i{
+.iscriviticlass:hover i {
   color: $pastelred;
 }
-.iscrittoclass button{
+.iscrittoclass button {
   border: none;
   background-color: white;
   cursor: not-allowed;
   color: black;
   text-decoration: none;
 }
-.bi-chevron-compact-down{
+.bi-chevron-compact-down {
   border-radius: 50px;
   padding: 5px;
 }
-.div-copy:hover .bi-chevron-compact-down{
+.div-copy:hover .bi-chevron-compact-down {
   color: $pastelred;
 }
-.div-copy:hover .bi-chevron-compact-up{
+.div-copy:hover .bi-chevron-compact-up {
   color: $pastelred;
 }
-.div-copy{
+.div-copy {
   color: $lightblue;
 }
-.div-copy:hover{
+.div-copy:hover {
   text-decoration: underline;
   text-decoration-color: $pastelred;
   cursor: pointer;
 }
-.card{
+.card {
   margin: 1rem;
 }
-.card img{
+.card img {
   width: 18rem;
   margin-left: -0.81rem;
   margin-top: -0.02rem;
@@ -288,7 +309,7 @@ body {
   margin-left: 3rem;
   margin-bottom: 1rem;
 }
-.buttonsdiv button{
+.buttonsdiv button {
   margin-right: 0.8rem;
   margin-top: 0.8rem;
 }
@@ -326,16 +347,28 @@ body {
 .cardcampagne-body {
   font-family: "Poppins", sans-serif;
   text-align: center;
+  canvas {
+    margin: auto;
+  }
+  .chart-container {
+    width: 600px;
+    height: 300px;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .cardcampagne-body {
+    .chart-container {
+      width: 90%;
+      height: 45%;
+    }
+  }
 }
 
-.card-bodycampagne canvas {
-  margin: auto;
-}
-.fontechart{
+.fontechart {
   font-size: 13px;
   color: $softgrey;
 }
-.fontechart a{
+.fontechart a {
   color: $softgrey;
 }
 .fontechart a:hover {
@@ -344,96 +377,96 @@ body {
 
 //ARTICOLI
 
-.author-paragraph{
+.author-paragraph {
   margin-left: 2rem;
   margin-top: 1.5rem;
   margin-bottom: 1rem;
 }
-.author-paragraph img{
+.author-paragraph img {
   width: 3rem;
 }
-.author-paragraph span{
+.author-paragraph span {
   font-size: large;
   margin-left: 0.5rem;
 }
-.image-box{
+.image-box {
   max-width: 28rem;
   margin: 2rem;
   background-color: white;
   border-radius: 24px;
   text-align: center;
 }
-.image-box img{
+.image-box img {
   width: 100%;
   border-top-left-radius: 24px;
   border-top-right-radius: 24px;
 }
-.image-box p{
+.image-box p {
   padding: 2rem;
 }
 //ABOUT
-footer{
+footer {
   text-align: center;
   background-color: $pastelpink;
   margin-top: 5rem;
 }
-.footer-body{
+.footer-body {
   text-align: center;
   margin-top: 2rem;
   margin-bottom: 1.5rem;
 }
-.footer-body a{
+.footer-body a {
   color: $navyblue;
   text-decoration: none;
 }
-.footer-body a:hover{
+.footer-body a:hover {
   color: $lightblue;
   text-decoration: underline;
   text-decoration-thickness: 1px;
 }
-.footernav ul li a{
+.footernav ul li a {
   text-decoration: none;
   color: $navyblue;
   padding: 1rem;
 }
-.footernav ul{
+.footernav ul {
   list-style: none;
 }
-.footernav ul li{
+.footernav ul li {
   display: inline;
 }
-.footernav ul li a:hover{
+.footernav ul li a:hover {
   font-weight: 500;
   color: $lightblue;
   text-decoration: underline;
 }
-.about_link{
+.about_link {
   text-align: center;
   background-color: $pastelyellow;
   border-radius: 24px;
 }
-#mappa iframe{
+#mappa iframe {
   border-bottom-left-radius: 24px;
   border-bottom-right-radius: 24px;
   margin-bottom: -0.45rem;
 }
-.about_link-body{
+.about_link-body {
   padding: 3rem;
 }
-.about_link-body h2{
+.about_link-body h2 {
   margin-bottom: 3rem;
 }
-.about_link-body ul{
+.about_link-body ul {
   list-style: none;
   margin-right: 1.3rem;
   margin-bottom: 3rem;
 }
-.about_link-body ul li{
+.about_link-body ul li {
   margin-bottom: 2.5rem;
   display: inline;
   margin-right: 0.3rem;
 }
-.about_link-body ul li a{
+.about_link-body ul li a {
   border: 1px solid $navyblue;
   padding-top: 0.8rem;
   padding-bottom: 1.2rem;
@@ -443,11 +476,19 @@ footer{
   color: $navyblue;
   text-decoration: none;
 }
-.about_link-body ul li a:hover{
+@media only screen and (max-width: 600px) {
+  .about_link-body ul li {
+    display: block;
+  }
+  .about_link-body ul li button {
+    margin: -1rem;
+  }
+}
+.about_link-body ul li a:hover {
   background-color: $navyblue;
   color: $pastelyellow;
 }
-.about_link-body ul li button{
+.about_link-body ul li button {
   background-color: $pastelyellow;
   border: 1px solid $navyblue;
   padding-top: 0.8rem;
@@ -458,7 +499,7 @@ footer{
   color: $navyblue;
   text-decoration: none;
 }
-.about_link-body ul li button:hover{
+.about_link-body ul li button:hover {
   background-color: $navyblue;
   color: $pastelyellow;
 }
