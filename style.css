@@ -1,0 +1,100 @@
+:root{
+    --darkmain: #212121;
+    --dark2: #C8DBBE; /*#F5E8C7;*/
+    --lightdark2: #c8dbbe0d;
+    --dark3: rgb(190, 190, 190);
+    --livered: #D57E7E;
+}
+@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
+body{
+    color: var(--dark3);
+    background-color: var(--darkmain);
+    font-family: sans-serif;
+}
+.cardcontainer{
+    display: inline-flex;
+}
+.watch_card{
+    text-align: right;
+    background-color: var(--dark2);
+    color: var(--darkmain);
+    margin: 20px;
+    box-shadow: 2px 2px 4px 2px #000000;
+    padding: 20px;
+    width: 500px;
+    border-radius: 24px;
+}
+.watch_card img{
+    width: 35px;
+    margin: 10px;
+    filter: invert(100%);
+    -webkit-filter: invert(10%);
+}
+.watch_card #day{
+    display: flex;
+}
+.watch_card #day span{
+    margin-top: 15px;
+    margin-left: 20px;
+    font-size: 35px;
+}
+.data_card{
+    background-color: var(--darkmain);
+    margin: 20px;
+    box-shadow: 2px 2px 4px 2px #000000;
+    padding: 20px;
+    width: 250px;
+    border-radius: 24px;
+    text-align: center;
+}
+.data_card img{
+    width: 50px;
+    margin: 10px;
+    filter: invert(100%);
+    -webkit-filter: invert(65%);
+}
+.data_card button{
+    color: var(--darkmain);
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 12px;
+    background-color: var(--dark2);
+    cursor: pointer;
+}
+.data_card button:hover{
+    color: var(--dark2);
+    padding: 9px;
+    width: 100%;
+    border: 1px solid var(--dark2);
+    border-radius: 12px;
+    background-color: var(--lightdark2);
+    cursor: pointer;
+}
+.data_card .secondbutton{
+    margin-bottom: 10px;
+    padding: 9px;
+    background-color: var(--darkmain);
+    color: var(--dark3);
+    border: 1px solid var(--dark3);
+}
+.data_output{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.data_output h3 {
+    margin-bottom: 30px;
+}
+.data_output_spy{
+    background-color: var(--livered);
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+.data_output_live{
+    display: flex;
+    color: var(--livered);
+    font-weight: bold;
+}
