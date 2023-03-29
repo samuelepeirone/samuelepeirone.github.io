@@ -1,100 +1,103 @@
-:root{
-    --darkmain: #212121;
-    --dark2: #C8DBBE; /*#F5E8C7;*/
+:root {
+    --darkmain: #1c1c1c;
+    --dark2: #C8DBBE;
+    /*#F5E8C7;*/
+    --violet: #dac6fa;
     --lightdark2: #c8dbbe0d;
     --dark3: rgb(190, 190, 190);
-    --livered: #D57E7E;
-}
-@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
-body{
-    color: var(--dark3);
-    background-color: var(--darkmain);
-    font-family: sans-serif;
-}
-.cardcontainer{
-    display: inline-flex;
-}
-.watch_card{
-    text-align: right;
-    background-color: var(--dark2);
-    color: var(--darkmain);
-    margin: 20px;
-    box-shadow: 2px 2px 4px 2px #000000;
-    padding: 20px;
-    width: 500px;
-    border-radius: 24px;
-}
-.watch_card img{
-    width: 35px;
-    margin: 10px;
-    filter: invert(100%);
-    -webkit-filter: invert(10%);
-}
-.watch_card #day{
-    display: flex;
-}
-.watch_card #day span{
-    margin-top: 15px;
-    margin-left: 20px;
-    font-size: 35px;
-}
-.data_card{
-    background-color: var(--darkmain);
-    margin: 20px;
-    box-shadow: 2px 2px 4px 2px #000000;
-    padding: 20px;
-    width: 250px;
-    border-radius: 24px;
-    text-align: center;
-}
-.data_card img{
-    width: 50px;
-    margin: 10px;
-    filter: invert(100%);
-    -webkit-filter: invert(65%);
-}
-.data_card button{
-    color: var(--darkmain);
-    padding: 10px;
-    width: 100%;
-    border: none;
-    border-radius: 12px;
-    background-color: var(--dark2);
-    cursor: pointer;
-}
-.data_card button:hover{
-    color: var(--dark2);
-    padding: 9px;
-    width: 100%;
-    border: 1px solid var(--dark2);
-    border-radius: 12px;
-    background-color: var(--lightdark2);
-    cursor: pointer;
-}
-.data_card .secondbutton{
-    margin-bottom: 10px;
-    padding: 9px;
-    background-color: var(--darkmain);
-    color: var(--dark3);
-    border: 1px solid var(--dark3);
-}
-.data_output{
-    text-align: center;
-    margin-bottom: 30px;
+    --red: #ff6e50;
+    --white: #ffffff;
+    --greytext: #434343;
 }
 
-.data_output h3 {
-    margin-bottom: 30px;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;700&display=swap');
+
+body {
+    color: var(--white);
+    background-color: var(--darkmain);
+    font-family: 'Poppins', sans-serif;
 }
-.data_output_spy{
-    background-color: var(--livered);
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    margin-right: 5px;
+.hidden {
+    display: none;
 }
-.data_output_live{
-    display: flex;
-    color: var(--livered);
-    font-weight: bold;
+
+.visible {
+    display: block;
+}
+
+.violet {
+    background-color: var(--violet);
+}
+
+.red {
+    background-color: var(--red);
+}
+.allCardsContainer{
+    display: inline-flex;
+}
+.cardcontainer {
+    position: relative;
+    min-height: 350px;
+    box-shadow: 2px 2px 4px 2px #000000;
+    width: 280px;
+    border-radius: 12px;
+    margin: 20px;
+    color: #000;
+}
+
+.data_card {
+    width: 256px;
+    text-align: left;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 12px;
+    transition: 200ms;
+}
+
+.data_output {
+    width: 82%;
+    float: left;
+}
+
+.data_output p {
+    font-size: 0.8rem;
+    color: var(--greytext);
+    margin-top: -7px;
+}
+
+.data_output h1 {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.data_card button {
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    padding: 10px;
+    width: 36px;
+    height: 36px;
+    border: 1px solid black;
+    border-radius: 6px;
+    background-color: transparent;
+    cursor: pointer;
+    transition: 200ms;
+    float: right;
+    margin-top: 40px;
+}
+
+.data_card button:hover {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    margin-top: 36px;
+}
+
+.data_hidden{
+    width: 100%;
+    float: left;
+    font-size: 0.8rem;
+    color: var(--greytext);
+    margin-top: 16px;
+    border-top: 1px solid black;
 }
