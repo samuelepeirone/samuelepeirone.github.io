@@ -7,7 +7,7 @@
     --dark3: rgb(190, 190, 190);
     --red: #ff6e50;
     --white: #ffffff;
-    --greytext: #434343;
+    --greytext: #2c2c2c;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;700&display=swap');
@@ -17,14 +17,6 @@ body {
     background-color: var(--darkmain);
     font-family: 'Poppins', sans-serif;
 }
-.hidden {
-    display: none;
-}
-
-.visible {
-    display: block;
-}
-
 .violet {
     background-color: var(--violet);
 }
@@ -41,7 +33,7 @@ body {
     box-shadow: 2px 2px 4px 2px #000000;
     width: 280px;
     border-radius: 12px;
-    margin: 20px;
+    margin-left: 20px;
     color: #000;
 }
 
@@ -73,11 +65,11 @@ body {
 
 .data_card button {
     font-family: 'Poppins', sans-serif;
-    color: black;
+    color: var(--greytext);
     padding: 10px;
     width: 36px;
     height: 36px;
-    border: 1px solid black;
+    border: 1px solid var(--greytext);
     border-radius: 6px;
     background-color: transparent;
     cursor: pointer;
@@ -87,10 +79,13 @@ body {
 }
 
 .data_card button:hover {
+    color: black;
+    border: 1px solid black;
     cursor: pointer;
     width: 40px;
     height: 40px;
     margin-top: 36px;
+    font-weight: 500;
 }
 
 .data_hidden{
@@ -100,4 +95,5 @@ body {
     color: var(--greytext);
     margin-top: 16px;
     border-top: 1px solid black;
+    display: none;
 }
